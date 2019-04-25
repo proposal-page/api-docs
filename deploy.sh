@@ -7,7 +7,7 @@ set -e
 yarn build
 
 # navigate into the build output directory
-cd .vuepress/dist
+cd docs/.vuepress/dist
 
 git init
 git add -A

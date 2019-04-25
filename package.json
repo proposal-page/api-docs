@@ -4,8 +4,8 @@
   "author": "Gianluca Bine",
   "license": "MIT",
   "scripts": {
-    "start": "vuepress dev",
-    "build": "vuepress build"
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "dependencies": {
     "vuepress-theme-api": "^0.2.1"
