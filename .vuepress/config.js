@@ -15,9 +15,11 @@ module.exports = {
             description: 'Documentação da API'
         }
     },
+    base: '/api-docs/',
     themeConfig: {
         docsRepo: 'proposal-page/api-docs',
         search: true,
+        editLinks: true,
         locales: {
             '/': {
                 lastUpdated: 'Last Updated',
