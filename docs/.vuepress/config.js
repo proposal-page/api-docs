@@ -16,6 +16,9 @@ module.exports = {
         }
     },
     base: '/api-docs/',
+    head: [
+        ['link', { rel: 'icon', href: 'https://app.proposalpage.com/static/favicon-green.ico' }]
+    ],
     themeConfig: {
         docsRepo: 'proposal-page/api-docs',
         search: true,
