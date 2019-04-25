@@ -1,0 +1,13 @@
+{
+  "name": "@proposal-page/api-docs",
+  "version": "1.0.0",
+  "author": "Gianluca Bine",
+  "license": "MIT",
+  "scripts": {
+    "start": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "dependencies": {
+    "vuepress-theme-api": "^0.2.1"
+  }
+}
