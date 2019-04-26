@@ -2,6 +2,26 @@
 
 Our API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL `https://api.proposalpage.com` and then generally follow the REST architecture.
 
+## Concept Structure
+
+The concept structure for a project (proposal) is the following:
+```
+/**
+ * Concept structure
+ * project
+ *  |
+ *  |--> blocks
+ *   |
+ *   |--> rows
+ *     |
+ *     |--> cols
+ *       |
+ *       |--> contents
+ *         |
+ *         |--> types {quote, image, text, etc}
+ */
+```
+
 ## Current Version
 
 By default, all requests to `https://api.proposalpage.com` receive the v1 version of the REST API.

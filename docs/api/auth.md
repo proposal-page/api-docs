@@ -12,6 +12,8 @@ POST https://api.proposalpage.com/accounts/auth/token
 ```
 
 - **Parameters:**
+    - ***Path:*** Empty.
+
     - ***Header:*** Empty.
 
     - ***Body:***
@@ -54,11 +56,14 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:*** Empty.
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**

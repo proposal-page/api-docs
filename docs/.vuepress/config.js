@@ -19,6 +19,9 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: 'https://app.proposalpage.com/static/favicon-green.ico' }]
     ],
+    markdown: {
+        lineNumbers: true
+    },
     themeConfig: {
         docsRepo: 'proposal-page/api-docs',
         search: true,
@@ -49,6 +52,8 @@ module.exports = {
                             children: [
                                 '',
                                 'getting-started/overview.md',
+                                'getting-started/schemas.md',
+                                'getting-started/content-types.md'
                             ]
                         },
                         {

@@ -1,13 +1,13 @@
-> 🚧 This is a work in progress and contributions are welcome.
+> 🚧 This documentation is not complete yet and contributions are very welcome. [See how to contribute](https://github.com/proposal-page/api-docs#contributing).
 
 # Introduction
 
-Proposal Page is a modern way to send your business proposals. 
+Proposal Page is the most modern way to manage your business proposals.
 
 It’s time to take a step forward. Forget old PDF format, let your customers have an online web [Proposal Page][@proposal-page] experience.
 
 ## Why Proposal Page was built
-The guys behind [Proposal Page][@proposal-page] were looking for a a modern way to send business proposals and 
+The guys behind [Proposal Page][@proposal-page] were looking for a a modern way to manage business proposals and 
 found some solutions that didn't really satisfy their needs. The service should be easy to use and fast.
 
 ### Edit
@@ -49,7 +49,7 @@ All Google fonts to personalize and style your proposals.
 ## Contributing
 
 Please see the [`CONTRIBUTING`][@proposal-page-contrib] file for details. If you want to contribute with 
-[the documentation][@proposal-page-docs], install its dependencies and run [Vuepress][@vuepress]
+this, install its dependencies and run [Vuepress][@vuepress]
 
 ```bash
 # if you are using yarn

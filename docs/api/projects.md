@@ -37,11 +37,18 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that is going to be cloned. | :heavy_check_mark: |
+
     - ***Header:***
     
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**
@@ -66,11 +73,18 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that the cover is going to be generated/regenerated. | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**
@@ -113,13 +127,16 @@ Status: 201
 ```
 
 - **Parameters:**
+    - ***Path:*** Empty.
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | title | string | Project Title. | :heavy_check_mark: |
@@ -171,11 +188,18 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | templateId | string | The id of the template that the project will be created from. | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**
@@ -198,8 +222,14 @@ Status: 204 (no-content)
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that is going to be deleted. | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
@@ -234,11 +264,14 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:*** Empty.
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**
@@ -281,13 +314,20 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that the password is going to be updated. | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | password | string | Project password. | :heavy_check_mark: |
@@ -334,11 +374,18 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that is going to be published/unpublished. | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**
@@ -381,11 +428,18 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that the is going to be retrieved. | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**
@@ -430,11 +484,18 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that is going to be secured/unsecured. | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**
@@ -466,11 +527,14 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:*** Empty.
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:*** Empty.
 
 - **Example:**
@@ -513,13 +577,20 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that is going to be updated. | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+
     - ***Body:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | title | string | Project Title. | |
@@ -555,11 +626,18 @@ Status: 200
 ```
 
 - **Parameters:**
+    - ***Path:***
+
+    | Name | Type | Description | Required |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | The id of the project that are being viewed | :heavy_check_mark: |
+
     - ***Header:***
-    
+
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. |  |
+
     - ***Body:*** Empty.
 
 - **Example:**
