@@ -103,42 +103,40 @@ module.exports = {
                 sidebar: {
                     '/pt/': [
                         {
-                            title: 'Getting Started',
+                            title: 'Primeiros Passos',
                             collapsable: false,
                             children: [
                                 '',
-                                'getting-started/installation',
-                                'getting-started/usage',
-                            ]
-                        },
-                        {
-                            title: 'Styling',
-                            collapsable: false,
-                            children: [
-                                'styling/basics',
-                            ]
-                        },
-                        {
-                            title: 'Extensions',
-                            collapsable: false,
-                            children: [
-                                'extensions/basics.md',
-                                'extensions/built-in.md'
+                                '/pt/getting-started/overview.md',
+                                '/pt/getting-started/schemas.md',
+                                '/pt/getting-started/content-types.md'
                             ]
                         },
                         {
                             title: 'API',
                             collapsable: false,
                             children: [
-                                'api/classes',
-                                'api/components',
-                                'api/plugins'
+                                '/pt/api/auth.md',
+                                '/pt/api/projects.md',
+                                '/pt/api/blocks.md',
+                                '/pt/api/rows.md',
+                                '/pt/api/columns.md',
+                                '/pt/api/contents.md',
                             ]
-                        }
+                        },
+                        {
+                            title: 'Erros',
+                            collapsable: false,
+                            children: [
+                                '/pt/errors/description.md',
+                            ]
+                        },
                     ],
                 },
                 nav: [
                     { text: 'GitHub', link: 'https://github.com/proposal-page/api-docs' },
+                    { text: 'PHP SDK', link: 'https://github.com/proposal-page/sdk-php' },
+                    { text: 'JS SDK', link: 'https://github.com/proposal-page/sdk-js' },
                 ],
             }
         },
