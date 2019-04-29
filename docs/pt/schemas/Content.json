@@ -1,0 +1,18 @@
+{
+  "type" : "object",
+  "properties" : {
+    "_id" : {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "style": {
+      "type": "object"
+    },
+    "data": {
+      "type": "object"
+    }
+  },
+  "required": [ "_id", "type", "style", "data"]
+}
