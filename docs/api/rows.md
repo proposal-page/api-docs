@@ -29,9 +29,9 @@ Status: 201
 
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project of the row that is going to be updated. | :heavy_check_mark: |
-    | blockId | string | The id of the block of the row that is going to be updated. | :heavy_check_mark: |
-    | rowId | string | The id of the row that is going to be updated. | :heavy_check_mark: |
+    | projectId | string | The id of the project of the row that is going to be cloned. | :heavy_check_mark: |
+    | blockId | string | The id of the block of the row that is going to be cloned. | :heavy_check_mark: |
+    | rowId | string | The id of the row that is going to be cloned. | :heavy_check_mark: |
     | position | number | The position to put the row that is going to be cloned (eg. 0 is first). | |
 
     - ***Header:***

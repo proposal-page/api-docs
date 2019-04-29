@@ -20,8 +20,8 @@ POST https://api.proposalpage.com/accounts/auth/token
 
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
-    | username | string | Your account username | :heavy_check_mark: |
-    | password | string | Your account password | :heavy_check_mark: |
+    | username | string | Your account username. | :heavy_check_mark: |
+    | password | string | Your account password. | :heavy_check_mark: |
 
 - **Response:**
 ```json

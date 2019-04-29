@@ -233,6 +233,7 @@ Status: 204 (no-content)
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
     | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    
     - ***Body:*** Empty.
 
 - **Example:**
@@ -630,7 +631,7 @@ Status: 200
 
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that are being viewed | :heavy_check_mark: |
+    | projectId | string | The id of the project that are being viewed. | :heavy_check_mark: |
 
     - ***Header:***
 
