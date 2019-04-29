@@ -208,7 +208,7 @@ curl -XPUT -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json"
 
 ## Retrieve
 
-You can use this endpoint to retrieve a column.
+You can use this endpoint to retrieve a content.
 
 - **Endpoint:**
 ```bash

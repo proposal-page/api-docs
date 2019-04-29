@@ -207,10 +207,10 @@ Status: 200
 
     | Name | Type | Description | Required |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project of the column that is going to be created. | :heavy_check_mark: |
-    | blockId | string | The id of the block of the column that is going to be created. | :heavy_check_mark: |
-    | rowId | string | The id of the row of the column that is going to be created. | :heavy_check_mark: |
-    | columnId | string | The id of the column that is going to be updated. | :heavy_check_mark: |
+    | projectId | string | The id of the project of the column that is going to be retrieved. | :heavy_check_mark: |
+    | blockId | string | The id of the block of the column that is going to be retrieved. | :heavy_check_mark: |
+    | rowId | string | The id of the row of the column that is going to be retrieved. | :heavy_check_mark: |
+    | columnId | string | The id of the column that is going to be retrieved. | :heavy_check_mark: |
 
     - ***Header:***
 

@@ -1,0 +1,27 @@
+{
+  "type" : "object",
+  "properties" : {
+    "_id" : {
+      "type": "string"
+    },
+    "style": {
+      "type": "object"
+    },
+    "fullScreen": {
+      "type": "boolean"
+    },
+    "rows": {
+      "type": "array"
+    },
+    "description": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [ "_id", "style", "fullScreen", "rows", "description", "createdAt", "updatedAt"]
+}

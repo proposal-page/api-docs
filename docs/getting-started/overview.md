@@ -33,7 +33,6 @@ We try to avoid breaking backwards-compatibility as much as possible.
 
 All requests must be encoded as JSON with the `Content-Type: application/json` header. Most responses, including errors, are encoded exclusively as JSON as well.
 
-
 ```
 Content-Type: application/json
 ```

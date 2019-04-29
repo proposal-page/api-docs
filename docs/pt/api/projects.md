@@ -1,17 +1,17 @@
-# Projects
+# Projetos
 
 [[toc]]
 
-## Clone
+## Clonar
 
-You can use this endpoint to clone a project.
+Você pode usar esse endpoint para clonar um projeto.
 
 - **Endpoint:**
 ```bash
 POST https://api.proposalpage.com/projects/<projectId>/clone
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -36,72 +36,72 @@ Status: 200
 }
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that is going to be cloned. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que será clonado. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
     
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XPOST -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74/clone'
 ```
 
-## Cover
+## Capa
 
-You can use this endpoint to generate/regenerate a project cover.
+Você pode usar esse endpoint para gerar/regenerar a capa de um projeto.
 
 - **Endpoint:**
 ```bash
 GET https://api.proposalpage.com/projects/<projectId>/screenshot
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
 {}
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that the cover is going to be generated/regenerated. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que a capa será gerada/regenerada. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XGET -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74/screenshot'
 ```
 
-## Create
+## Criar
 
-You can use this endpoint to create a project.
+Você pode usar esse endpoint para criar um projeto.
 
 - **Endpoint:**
 ```bash
 POST https://api.proposalpage.com/projects
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 201
 
@@ -126,43 +126,43 @@ Status: 201
 }
 ```
 
-- **Parameters:**
-    - ***Path:*** Empty.
+- **Parâmetros:**
+    - ***Path:*** Vazio.
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:***
+    - ***Corpo:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | title | string | Project Title. | :heavy_check_mark: |
-    | token | string | Project Token. | |
-    | fonts | array | Project Fonts. | |
-    | publish | boolean | Project is published or not. | |
-    | secure | boolean | Project is secure (protected with a password) or not. | |
-    | password | string | Project Password. | |
-    | blocks | array | Project blocks. | |
-    | currency | string | Project currency. | |
+    | title | string | Título do projeto. | :heavy_check_mark: |
+    | token | string | Token do projeto. | |
+    | fonts | array | Fontes usadas no projeto. | |
+    | publish | boolean | Se o projeto está publicado ou não | |
+    | secure | boolean | Se projeto é seguro (protegido por senha) ou não. | |
+    | password | string | Senha do projeto. | |
+    | blocks | array | Blocos do projeto. | |
+    | currency | string | Moeda do projeto. | |
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XPOST -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" -d '{ "title": "Project Title", "blocks": [] }' 'https://api.proposalpage.com/projects'
 ```
 
-## Create From Template
+## Criar a partir de um Template
 
-You can use this endpoint to create a project from a template.
+Você pode usar esse endpoint para criar um projeto a partir de um template.
 
 - **Endpoint:**
 ```bash
 POST https://api.proposalpage.com/projects/<templateId>/copy
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -187,70 +187,70 @@ Status: 200
 }
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | templateId | string | The id of the template that the project will be created from. | :heavy_check_mark: |
+    | templateId | string | O id do template do qual o projeto será criado. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XPOST -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cb5dfb998e83d001ab9e5e0/copy'
 ```
 
-## Delete
+## Deletar
 
-You can use this endpoint to delete a existing project.
+Você pode usar esse endpoint para excluir um projeto existente.
 
 - **Endpoint:**
 ```bash
 DELETE https://api.proposalpage.com/projects/<projectId>
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 204 (no-content)
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that is going to be deleted. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que será deletado. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
     
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XDELETE -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74'
 ```
 
-## List
+## Listar
 
-You can use this endpoint to list the projects of your account paginated.
+Você pode usar esse endpoint para listar os projetos da sua conta de forma paginada.
 
 - **Endpoint:**
 ```bash
 GET https://api.proposalpage.com/projects
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -264,32 +264,32 @@ Status: 200
 }
 ```
 
-- **Parameters:**
-    - ***Path:*** Empty.
+- **Parâmetros:**
+    - ***Path:*** Vazio.
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XGET -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects'
 ```
 
-## Password
+## Senha
 
-You can use this endpoint to set a password in a project.
+Você pode usar esse endpoint para definir uma senha em um projeto.
 
 - **Endpoint:**
 ```bash
 POST https://api.proposalpage.com/projects/<projectId>/password
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -314,42 +314,42 @@ Status: 200
 }
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that the password is going to be updated. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que a senha será atualizada. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:***
+    - ***Corpo:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | password | string | Project password. | :heavy_check_mark: |
+    | password | string | Senha do projeto. | :heavy_check_mark: |
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XPOST -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" -d '{ "password": "my-password" }' 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74/password'
 ```
 
-## Publish
+## Publicar
 
-You can use this endpoint to publish/unpublish a project.
+Você pode usar esse endpoint para publicar/cancelar a publicação de um projeto.
 
-When you make the request, if the project is published it will be unpublished and vice-versa.
+Quando a requisição é feita, se o projeto está publicado, ele será despublicado e vice-versa.
 
 - **Endpoint:**
 ```bash
 POST https://api.proposalpage.com/projects/<projectId>/publish
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -374,36 +374,36 @@ Status: 200
 }
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that is going to be published/unpublished. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que será publicado/despublicado. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XPOST -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74/publish'
 ```
 
-## Retrieve
+## Recuperar
 
-You can use this endpoint to retrieve a specific project of your account.
+Você pode usar esse endpoint para recuperar um projeto específico da sua conta.
 
 - **Endpoint:**
 ```bash
 GET https://api.proposalpage.com/projects/<projectId>
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -428,38 +428,38 @@ Status: 200
 }
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that the is going to be retrieved. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que será recuperado. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XGET -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74'
 ```
 
-## Secure
+## Proteger
 
-You can use this endpoint to secure/unsecure a project.
+Você pode usar esse endpoint para proteger/desproteger um projeto.
 
-When you make the request, if the project is secured it will be unsecured and vice-versa.
+Quando a requisição é feita, se o projeto está protegido, ele será desprotegido e vice-versa.
 
 - **Endpoint:**
 ```bash
 POST https://api.proposalpage.com/projects/<projectId>/secure
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -484,36 +484,36 @@ Status: 200
 }
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that is going to be secured/unsecured. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que será protegido/desprotegido. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XPOST -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74/secure'
 ```
 
 ## Templates
 
-You can use this endpoint to list the projects templates paginated.
+Você pode usar esse endpoint para listar os templates de projetos de forma paginada.
 
 - **Endpoint:**
 ```bash
 GET https://api.proposalpage.com/projects/templates
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -527,32 +527,32 @@ Status: 200
 }
 ```
 
-- **Parameters:**
-    - ***Path:*** Empty.
+- **Parâmetros:**
+    - ***Path:*** Vazio.
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XGET -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/templates'
 ```
 
-## Update
+## Atualizar
 
-You can use this endpoint to update a existing project.
+Você pode usar esse endpoint para atualizar um projeto existente.
 
 - **Endpoint:**
 ```bash
 PUT https://api.proposalpage.com/projects/<projectId>
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -577,47 +577,47 @@ Status: 200
 }
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that is going to be updated. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que será atualizado. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. | :heavy_check_mark: |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. | :heavy_check_mark: |
 
-    - ***Body:***
+    - ***Corpo:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | title | string | Project Title. | |
-    | token | string | Project Token. | |
-    | fonts | array | Project Fonts. | |
-    | publish | boolean | Project is published or not. | |
-    | secure | boolean | Project is secure (protected with a password) or not. | |
-    | password | string | Project Password. | |
-    | blocks | array | Project blocks. | |
-    | currency | string | Project currency. | |
+    | title | string | Título do projeto. | |
+    | token | string | Token do projeto. | |
+    | fonts | array | Fontes usadas no projeto. | |
+    | publish | boolean | Se o projeto está publicado ou não | |
+    | secure | boolean | Se projeto é seguro (protegido por senha) ou não. | |
+    | password | string | Senha do projeto. | |
+    | blocks | array | Blocos do projeto. | |
+    | currency | string | Moeda do projeto. | |
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XPUT -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" -d '{ "title": "Updated Title" }' 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74'
 ```
 
-## View and Notify
+## Visualizar e Notificar
 
-You can use this endpoint to update project last view time and send email with notification only if is not the project owner viewing.
+Você pode usar esse endpoint para atualizar o último tempo de visualização do projeto e enviar email com notificação somente se não for a visualização do proprietário do projeto.
 
 - **Endpoint:**
 ```bash
 PUT https://api.proposalpage.com/projects/<projectId>/view-and-notify
 ```
 
-- **Response:**
+- **Resposta:**
 ```json
 Status: 200
 
@@ -626,22 +626,22 @@ Status: 200
 }
 ```
 
-- **Parameters:**
+- **Parâmetros:**
     - ***Path:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | projectId | string | The id of the project that are being viewed. | :heavy_check_mark: |
+    | projectId | string | O id do projeto que está sendo visualizado. | :heavy_check_mark: |
 
-    - ***Header:***
+    - ***Cabeçalho:***
 
-    | Name | Type | Description | Required |
+    | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | Authorization | string | Your Bearer Token obtained in the Auth Token endpoint. |  |
+    | Authorization | string | Seu Bearer Token obtido no endpoint autenticação. |  |
 
-    - ***Body:*** Empty.
+    - ***Corpo:*** Vazio.
 
-- **Example:**
+- **Exemplo:**
 ```bash
 curl -XPUT -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74/view-and-notify'
 ```

@@ -1,0 +1,57 @@
+{
+   "type" : "object",
+   "properties" : {
+     "_id" : {
+       "type": "string"
+     },
+     "title": {
+       "type": "string"
+     },
+     "fonts": {
+       "type": "array"
+     },
+     "publish": {
+       "type": "boolean"
+     },
+     "secure": {
+       "type": "boolean"
+     },
+     "countViews": {
+       "type": "number"
+     },
+     "timeViews": {
+       "type": "number"
+     },
+     "priority": {
+       "type": "number"
+     },
+     "blocks": {
+       "type": "array"
+     },
+     "userId": {
+       "type": "string"
+     },
+     "accountId": {
+       "type": "string"
+     },
+     "token": {
+       "type": "string"
+     },
+     "slug": {
+       "type": "string"
+     },
+     "publishURL": {
+       "type": "string"
+     },
+     "createdAt": {
+       "type": "string"
+     },
+     "updatedAt": {
+       "type": "string"
+     },
+     "__v": {
+       "type": "number"
+     }
+   },
+   "required": [ "_id", "title", "fonts", "publish", "secure", "countViews", "timeViews", "priority", "blocks", "userId", "accountId", "token", "slug", "publishURL", "createdAt", "updatedAt", "__v"]
+ }
