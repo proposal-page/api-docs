@@ -76,7 +76,7 @@ Nós limitamos o número de requisições que você pode fazer durante um certo 
 
 | Header Name | Description |
 | :-: | :-: |
-| X-RateLimit-Limit | O número máximo de requisições que você pode fazer por minuto. |
+| X-RateLimit-Limit | O número máximo de requisições que você pode fazer por segundo. |
 | X-RateLimit-Remaining | O número de requisições restantes na janela de limite de requisições atual. |
 | X-RateLimit-Reset | A hora em que a janela de limite de requisições atual é redefinida em UTC epoch seconds. |
 

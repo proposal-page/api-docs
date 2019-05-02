@@ -77,7 +77,7 @@ We limit the number of calls you can make over a certain period of time. Rate li
 
 | Header Name | Description |
 | :-: | :-: |
-| X-RateLimit-Limit | The maximum number of requests you're permitted to make per minute. |
+| X-RateLimit-Limit | The maximum number of requests you're permitted to make per second. |
 | X-RateLimit-Remaining | The number of requests remaining in the current rate limit window. |
 | X-RateLimit-Reset | The time at which the current rate limit window resets in UTC epoch seconds. |
 
