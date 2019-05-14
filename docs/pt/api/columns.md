@@ -41,7 +41,7 @@ Status: 201
 
     | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | size | number | Tamanho da coluna (min 1 e max 12), a soma dos tamanhos das colunas de uma linha não deve exceder 12. | :heavy_check_mark: |
+    | size | número | Tamanho da coluna (min 1 e max 12), a soma dos tamanhos das colunas de uma linha não deve exceder 12. | :heavy_check_mark: |
     | contents | array | Conteúdos da coluna. | |
 
 - **Exemplo:**
@@ -174,7 +174,7 @@ Status: 200
 
     | Nome | Tipo | Descrição | Requerido |
     | :-: | :-: | :-: | :-: |
-    | size | number | Tamanho da coluna (min 1 e max 12), a soma dos tamanhos das colunas de uma linha não deve exceder 12. | :heavy_check_mark: |
+    | size | número | Tamanho da coluna (min 1 e max 12), a soma dos tamanhos das colunas de uma linha não deve exceder 12. | :heavy_check_mark: |
     | contents | array | Conteúdos da coluna. | |
 
 - **Exemplo:**

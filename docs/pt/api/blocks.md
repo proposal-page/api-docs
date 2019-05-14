@@ -91,7 +91,7 @@ Status: 201
     | :-: | :-: | :-: | :-: |
     | projectId | string | O id do projeto do bloco que será clonado. | :heavy_check_mark: |
     | blockId | string | O id do bloco que será clonado. | :heavy_check_mark: |
-    | position | number | A posição para colocar o bloco que será clonado (por exemplo, 0 é o primeiro). | |
+    | position | número | A posição para colocar o bloco que será clonado (por exemplo, 0 é o primeiro). | |
 
     - ***Cabeçalho:***
 
