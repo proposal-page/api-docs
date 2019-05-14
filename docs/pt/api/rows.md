@@ -32,7 +32,7 @@ Status: 201
     | projectId | string | O id do projeto da linha que será clonada. | :heavy_check_mark: |
     | blockId | string | O id do bloco da linha que será clonada. | :heavy_check_mark: |
     | rowId | string | O id da linha que será clonada.| :heavy_check_mark: |
-    | position | number | A posição para colocar a linha que será clonada (por exemplo, 0 é a primeira). | |
+    | position | número | A posição para colocar a linha que será clonada (por exemplo, 0 é a primeira). | |
 
     - ***Cabeçalho:***
 

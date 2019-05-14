@@ -241,6 +241,108 @@ Status: 204 (no-content)
 curl -XDELETE -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74'
 ```
 
+## Intenção de Aceite
+
+Você pode usar esse endpoint para realizar uma intenção de aceite.
+
+- **Endpoint:**
+```bash
+POST https://api.proposalpage.com/projects/<projectId>/accept
+```
+
+- **Resposta:**
+```json
+Status: 200
+
+{
+  "message": "The token and link to accept the project/proposal has been sent to the customer email",
+}
+```
+
+- **Parâmetros:**
+    - ***Path:***
+
+    | Nome | Tipo | Descrição | Requerido |
+    | :-: | :-: | :-: | :-: |
+    | projectId | string | O id do projeto para realização de intenção de aceite. | :heavy_check_mark: |
+
+    - ***Cabeçalho:*** Vazio.
+
+    - ***Corpo:*** Vazio.
+
+- **Exemplo:**
+```bash
+curl -XPOST -H "Content-type: application/json" 'https://api.proposalpage.com/projects/5cbe31f7372099001a4f0d74/accept'
+```
+
+## Confirmar Aceite
+
+Você pode usar esse endpoint para confirmar a aceitação de um projeto.
+
+- **Endpoint:**
+```bash
+POST https://api.proposalpage.com/projects/accept/<acceptToken>
+```
+
+- **Resposta:**
+```json
+Status: 200
+
+{
+  "message": "The project/proposal has been successfully accepted",
+}
+```
+
+- **Parâmetros:**
+    - ***Path:***
+
+    | Nome | Tipo | Descrição | Requerido |
+    | :-: | :-: | :-: | :-: |
+    | acceptToken | string | O token de aceitação do projeto recebido no email. | :heavy_check_mark: |
+
+    - ***Cabeçalho:*** Vazio.
+
+    - ***Corpo:*** Vazio.
+
+- **Exemplo:**
+```bash
+curl -XPOST -H "Content-type: application/json" 'https://api.proposalpage.com/projects/accept/28f39ba5-f3fa-38c1-9672-067110134c58'
+```
+
+## Reverter Aceite
+
+Você pode usar esse endpoint para reverter a aceitação de um projeto.
+
+- **Endpoint:**
+```bash
+POST https://api.proposalpage.com/projects/revert-accept/<acceptReversionToken>
+```
+
+- **Resposta:**
+```json
+Status: 200
+
+{
+  "message": "The project/proposal has been successfully accepted",
+}
+```
+
+- **Parâmetros:**
+    - ***Path:***
+
+    | Nome | Tipo | Descrição | Requerido |
+    | :-: | :-: | :-: | :-: |
+    | acceptReversionToken | string | O token de reversão de aceitação do projeto recebido no email. | :heavy_check_mark: |
+
+    - ***Cabeçalho:*** Vazio.
+
+    - ***Corpo:*** Vazio.
+
+- **Exemplo:**
+```bash
+curl -XPOST -H "Content-type: application/json" 'https://api.proposalpage.com/projects/revert-accept/28f39ba5-f3fa-38c1-9672-067110134c58'
+```
+
 ## Listar
 
 Você pode usar esse endpoint para listar os projetos da sua conta de forma paginada.
@@ -266,6 +368,14 @@ Status: 200
 
 - **Parâmetros:**
     - ***Path:*** Vazio.
+    
+    - ***Query String:***
+        
+    | Nome | Tipo | Descrição | Requerido |
+    | :-: | :-: | :-: | :-: |
+    | page | número | A página que você deseja listar. |  |
+    | itemsPerPage | número | O número de projetos por página. |  |
+    | title | string | Filtrar projetos por título (por exemplo: title = 'teste' listará todos os projetos que o título começa com 'teste'). |  |
 
     - ***Cabeçalho:***
 
@@ -277,7 +387,7 @@ Status: 200
 
 - **Exemplo:**
 ```bash
-curl -XGET -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects'
+curl -XGET -H 'Authorization: Bearer $TOKEN' -H "Content-type: application/json" 'https://api.proposalpage.com/projects?page=1&itemsPerPage=10'
 ```
 
 ## Senha
